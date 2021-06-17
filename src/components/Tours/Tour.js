@@ -23,12 +23,6 @@ const Tour = ({ tour }) => {
   const img = data.file.childImageSharp.fluid
   const { name, price, country, days, slug, images } = tour
 
-  // let mainImage
-  // if (images) {
-  //   mainImage = images[0].fluid
-  // } else {
-  //   mainImage = img
-  // }
   let mainImage = images ? images[0].fluid : img
 
   return (
